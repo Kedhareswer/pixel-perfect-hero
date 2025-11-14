@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,33 +10,33 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 75 100% 82%;
-    --foreground: 0 0% 10%;
+    --background: 78 100% 58%;
+    --foreground: 210 12% 8%;
 
-    --card: 0 0% 92%;
-    --card-foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 9% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 210 12% 8%;
 
-    --primary: 0 0% 10%;
-    --primary-foreground: 75 100% 82%;
+    --primary: 210 9% 10%;
+    --primary-foreground: 78 100% 58%;
 
-    --secondary: 0 0% 92%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 210 12% 8%;
 
     --muted: 0 0% 92%;
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 210 9% 35%;
 
-    --accent: 75 100% 82%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 78 100% 58%;
+    --accent-foreground: 210 12% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 75% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 10%;
-    --input: 0 0% 10%;
-    --ring: 0 0% 10%;
+    --border: 210 12% 8%;
+    --input: 210 12% 8%;
+    --ring: 210 12% 8%;
 
     --radius: 2rem;
 
@@ -101,5 +103,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
   }
 }
