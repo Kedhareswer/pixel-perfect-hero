@@ -98,6 +98,42 @@ All colors MUST be HSL.
   gap: clamp(1.5rem, 4vw, 2.5rem);
 }
 
+.landing-nav {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.landing-nav__list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 2vw, 1.2rem);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.landing-nav__pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  border: 2px solid #0f0f10;
+  background: #c8ff4f;
+  color: #0f0f10;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.22);
+}
+
+.landing-nav__pill:hover {
+  background: #0f0f10;
+  color: #c8ff4f;
+}
+
 .landing-tags {
   display: inline-flex;
   flex-wrap: wrap;
@@ -361,7 +397,7 @@ All colors MUST be HSL.
 }
 
 .timeline-section .landing-section__container {
-  gap: clamp(2.5rem, 6vw, 4rem);
+  gap: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .timeline-shell {
@@ -638,14 +674,14 @@ All colors MUST be HSL.
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(2.25rem, 6vw, 4rem);
   background: #1c1c1c;
   color: #f2f2f2;
 }
 
 .loading-screen__frame {
   position: relative;
-  width: min(100%, 1100px);
+  width: min(100%, 1040px);
   aspect-ratio: 16 / 9;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: #1e1e1e;
@@ -658,8 +694,8 @@ All colors MUST be HSL.
 
 .loading-screen__year {
   position: absolute;
-  top: clamp(1.5rem, 4vw, 2.75rem);
-  right: clamp(1.75rem, 4vw, 2.75rem);
+  top: clamp(2rem, 4.5vw, 3.1rem);
+  right: clamp(2rem, 4.5vw, 3.1rem);
   font-size: clamp(0.95rem, 1.3vw, 1.25rem);
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -677,7 +713,7 @@ All colors MUST be HSL.
 }
 
 .loading-screen__letter {
-  font-size: clamp(5.5rem, 18vw, 14rem);
+  font-size: clamp(5rem, 16vw, 12rem);
   letter-spacing: -0.04em;
   z-index: 1;
 }
@@ -714,8 +750,8 @@ All colors MUST be HSL.
 
 .loading-screen__footer {
   position: absolute;
-  bottom: clamp(1.8rem, 4vw, 2.75rem);
-  left: clamp(1.8rem, 4vw, 2.75rem);
+  bottom: clamp(2.2rem, 4.8vw, 3.25rem);
+  left: clamp(2rem, 4.5vw, 3.1rem);
   display: flex;
   align-items: center;
   gap: clamp(0.6rem, 1.8vw, 1rem);

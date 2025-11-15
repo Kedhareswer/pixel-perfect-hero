@@ -4,7 +4,7 @@ import heroPhoto from "@/assets/hero-photo.jpg";
 const Index = () => {
   return (
     <div className="landing-page">
-      <section className="landing-hero">
+      <section id="top" className="landing-hero">
         <div className="landing-section__container">
           <header className="landing-header">
             <div className="landing-tags">
@@ -18,6 +18,22 @@ const Index = () => {
 
             <span className="landing-year">2024</span>
           </header>
+
+          <nav className="landing-nav">
+            <ul className="landing-nav__list">
+              {[
+                { label: "Overview", href: "#top" },
+                { label: "Creative Brief", href: "#creative" },
+                { label: "Timeline", href: "#timeline" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a className="landing-nav__pill" href={item.href}>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           <div className="landing-hero__grid">
             <div className="landing-hero__text">
@@ -44,7 +60,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="landing-creative">
+      <section id="creative" className="landing-creative">
         <div className="landing-section__container">
           <header className="landing-creative__header">
             <div className="landing-creative__tags">
@@ -89,7 +105,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="timeline-section">
+      <section id="timeline" className="timeline-section">
         <div className="landing-section__container">
           <div className="timeline-shell">
             <header className="timeline-nav">
