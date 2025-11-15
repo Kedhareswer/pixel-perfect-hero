@@ -64,10 +64,13 @@ const Index = () => {
               ))}
             </div>
 
-            <div className="landing-creative__sparkles" aria-hidden="true">
-              <span>✶</span>
-              <span>✶</span>
-              <span>✶</span>
+            <div className="landing-creative__divider" aria-hidden="true">
+              <span className="landing-creative__divider-line" />
+              <div className="landing-creative__sparkles">
+                <span>✦</span>
+                <span>✦</span>
+                <span>✦</span>
+              </div>
             </div>
           </header>
 

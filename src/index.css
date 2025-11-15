@@ -288,7 +288,29 @@ All colors MUST be HSL.
 .landing-creative__tag-icon {
   width: 1rem;
   height: 1rem;
-  color: #c8ff4f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: #c8ff4f;
+  color: #0f0f10;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.35);
+}
+
+.landing-creative__divider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  flex: 1;
+}
+
+.landing-creative__divider-line {
+  display: block;
+  width: clamp(8rem, 35vw, 32rem);
+  height: 1px;
+  background: rgba(200, 255, 79, 0.35);
 }
 
 .landing-creative__sparkles {
@@ -298,25 +320,12 @@ All colors MUST be HSL.
   color: #c8ff4f;
   font-size: 0.8rem;
   letter-spacing: 0.5em;
-  position: relative;
-  padding-left: clamp(4.5rem, 14vw, 9rem);
-}
-
-.landing-creative__sparkles::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(4rem, 15vw, 10rem);
-  height: 1px;
-  background: rgba(200, 255, 79, 0.35);
 }
 
 .landing-creative__body {
-  margin-top: clamp(2rem, 5vw, 3rem);
-  background: #0f0f10;
-  color: #c8ff4f;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  background: #c8ff4f;
+  color: #0f0f10;
   border-radius: clamp(3rem, 7vw, 5rem);
   padding: clamp(2.5rem, 7vw, 4.5rem);
   display: grid;
@@ -333,14 +342,22 @@ All colors MUST be HSL.
   font-weight: 900;
   line-height: 0.82;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: clamp(0.8rem, 2vw, 1.5rem);
   grid-area: title;
+  color: #0f0f10;
 }
 
 .landing-creative__title span {
   font-size: clamp(3.5rem, 11vw, 6.5rem);
   letter-spacing: -0.04em;
+}
+
+.landing-creative__title span:last-child {
+  text-align: right;
+  flex: 1 1 auto;
 }
 
 .landing-creative__image {
@@ -386,7 +403,7 @@ All colors MUST be HSL.
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   line-height: 1.7;
   color: #0f0f10;
-  max-width: 420px;
+  max-width: 360px;
 }
 
 .landing-creative__copy p {
@@ -441,7 +458,7 @@ All colors MUST be HSL.
 }
 
 .timeline-section .landing-section__container {
-  gap: clamp(1.5rem, 4vw, 2.5rem);
+  gap: clamp(0.25rem, 1.2vw, 0.75rem);
 }
 
 .timeline-shell {
@@ -522,6 +539,7 @@ All colors MUST be HSL.
   padding: clamp(2.5rem, 7vw, 4rem) clamp(2rem, 6vw, 3.5rem) clamp(3rem, 8vw, 4.5rem);
   color: #f5f5f5;
   box-shadow: 0 35px 65px rgba(0, 0, 0, 0.35);
+  margin-top: -clamp(0.25rem, 1vw, 0.6rem);
 }
 
 .timeline-card__inner {
