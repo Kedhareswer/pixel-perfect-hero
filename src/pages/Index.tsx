@@ -7,33 +7,25 @@ const Index = () => {
       <section id="top" className="landing-hero">
         <div className="landing-section__container">
           <header className="landing-header">
-            <div className="landing-tags">
-              {["The Brand", "Paucek and Lage"].map((label) => (
-                <button key={label} className="landing-tag">
-                  <ArrowUpRight className="landing-tag__icon" />
-                  {label}
-                </button>
-              ))}
-            </div>
+            <nav className="landing-nav" aria-label="Primary">
+              <ul className="landing-nav__list">
+                {[
+                  { label: "Overview", href: "#top" },
+                  { label: "Creative Brief", href: "#creative" },
+                  { label: "Timeline", href: "#timeline" },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <a className="landing-nav__pill" href={item.href}>
+                      {item.label}
+                      <ArrowUpRight className="landing-nav__icon" aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
             <span className="landing-year">2024</span>
           </header>
-
-          <nav className="landing-nav">
-            <ul className="landing-nav__list">
-              {[
-                { label: "Overview", href: "#top" },
-                { label: "Creative Brief", href: "#creative" },
-                { label: "Timeline", href: "#timeline" },
-              ].map((item) => (
-                <li key={item.label}>
-                  <a className="landing-nav__pill" href={item.href}>
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
 
           <div className="landing-hero__grid">
             <div className="landing-hero__text">
